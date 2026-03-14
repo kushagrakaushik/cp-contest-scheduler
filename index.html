@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP Contest Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="services/dataService.js" defer></script>
+    <script src="components/contentCard.js" defer></script>
+    <script src="script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Zen+Tokyo+Zoo&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Competitive Programming Contest Scheduler</h1>
+    
+    <main>
+        <section class="platform-selection">
+            <h2>Filter Platforms</h2>
+            <div class="platform-options">
+                <label><input type="checkbox" value="Codeforces"> Codeforces</label>
+                <label><input type="checkbox" value="AtCoder"> AtCoder</label>
+                <label><input type="checkbox" value="LeetCode"> LeetCode</label>
+                <label><input type="checkbox" value="HackerRank"> HackerRank</label>
+                <label><input type="checkbox" value="CodeChef"> CodeChef</label>
+            </div>
+            <!-- <button id="save-preferences">Save Preferences</button> -->
+        </section>
+
+        <section class="upcoming-contests">
+            <h2>Upcoming Contests</h2>
+            <div class="content-container" id="contest-list">
+                <!-- Content cards will be dynamically inserted here -->
+            </div>
+        </section>
+    
+        <section class="user-contests">
+            <h2>Your Contests</h2>
+            <div class="content-container" id="registered-contests">
+                <!-- User's contests will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
