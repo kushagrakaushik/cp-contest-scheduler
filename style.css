@@ -72,7 +72,12 @@ main{
     align-items: center;
 }
 
-.register-button{
+.button-container{
+    display: flex;
+    gap: 10px;
+}
+
+.register-button, .calendar-button{
     background-color: greenyellow;
     color: black;
     font-size: 18px;
