@@ -1,6 +1,5 @@
 import { getContests } from "./services/contestService.js";
 import { addContestsToContainer } from "./components/contentCard.js";
-import {createContestCard} from "./components/contentCard.js";
 
 async function initializeApp() {
     try {

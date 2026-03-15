@@ -71,3 +71,12 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+
+.register-button{
+    background-color: greenyellow;
+    color: black;
+    font-size: 18px;
+    padding: 8px;
+    border: transparent;
+    border-radius: 20px;
+}
