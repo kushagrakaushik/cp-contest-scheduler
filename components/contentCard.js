@@ -42,6 +42,8 @@ export function createContestCard(contest, upcomingContainer, registeredContaine
     registerButton.textContent = "Register";
 
     registerButton.addEventListener("click", () => {
+        const registerUrl = `https://codeforces.com/contests/${contest.id}`;
+        window.open(registerUrl, "_blank");
         if (registerButton.textContent === "Unregister") {
             registerButton.textContent = "Register";
                 upcomingContainer.appendChild(card);
