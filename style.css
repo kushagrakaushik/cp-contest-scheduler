@@ -3,18 +3,20 @@
     margin:0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    color: #e5e5e5;
 }
 
 body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: #0a111f;
 }
 
 h1,h2,h3{
     text-align: center;
-    color: #333;
+    color: #fca311;
+    text-shadow: 0px 0px 2px #fca311;
 }
 
 h1, h2{
@@ -23,7 +25,7 @@ h1, h2{
 
 main{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +36,7 @@ main{
 
 .platform-options{
     display: flex;
+    text-shadow: 0px 0px 10px #e5e5e5;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
@@ -41,8 +44,10 @@ main{
 }
 
 .upcoming-contests, .user-contests{
-    background-color: white;
-    width: 70%;
+    box-shadow: 0px 0px 10px #14213d;
+    background-color: #14213d;
+    width: 90%;
+    max-width: 1400px;
     justify-content: center;
     padding: 20px;
     border-radius: 8px;
@@ -61,8 +66,9 @@ main{
 }
 
 .contest-card{
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #7D8391;
+    box-shadow: 0px 0px 10px #7D8391;
+    /* border: 1px solid #7D8391; */
     border-radius: 8px;
     padding: 15px;
     display: flex;
@@ -78,10 +84,13 @@ main{
 }
 
 .register-button, .calendar-button{
-    background-color: greenyellow;
-    color: black;
+    background-color: #fca311;
     font-size: 18px;
     padding: 8px;
     border: transparent;
     border-radius: 20px;
+    transition: ease 0.5s;
+}
+.register-button:hover, .calendar-button:hover{
+    background-color: #0F192E;
 }
